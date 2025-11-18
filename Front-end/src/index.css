@@ -1,14 +1,14 @@
 :root{
   /* Paleta clara com cabeçalho escuro para destacar o logo */
-  --color-bg: #eaf6ff;       /* fundo azul claro suave (ajustado para destacar logo) */
-  --color-surface: #ffffff;  /* superfícies brancas */
+  --color-bg: #f0f9ff;       /* fundo azul muito claro */
+  --color-surface: #d7eef8;  /* superfície/card: azul claro um pouco mais escuro */
   --color-header: #0b4f6c;   /* cabeçalho escuro para destacar logo branco */
   --color-primary: #2563eb;  /* azul suave para elementos primários */
   --color-accent: #ef4444;   /* vermelho vibrante para CTAs (combina com o logo) */
   --color-accent-2: #fb7185; /* tom mais claro para hover */
   --color-text: #0f1724;     /* texto escuro */
   --color-muted: #6b7280;    /* texto secundário */
-  --color-border: #e6eef6;   /* borda / separadores sutis */
+  --color-border: #d3eaf5;   /* borda / separadores sutis (ajustada) */
 }
 
 *{box-sizing:border-box}
@@ -31,7 +31,7 @@ body{
 .nav a{color:rgba(255,255,255,0.95);text-decoration:none;margin-left:16px;font-weight:600}
 .nav a:hover{opacity:1;color:var(--color-accent-2)}
 
-.hero{background:var(--color-surface);border-radius:12px;padding:24px;margin-top:18px;display:flex;gap:20px;align-items:center;box-shadow:0 6px 18px rgba(16,24,40,0.04)}
+.hero{background:var(--color-surface);border-radius:12px;padding:24px;margin-top:18px;display:flex;gap:20px;align-items:center;box-shadow:0 6px 18px rgba(16,24,40,0.03)}
 .hero h1{margin:0;font-size:30px;color:var(--color-text)}
 .cta-btn{background:var(--color-accent);border:none;color:white;padding:10px 18px;border-radius:8px;cursor:pointer;font-weight:700}
 .cta-btn:hover{background:var(--color-accent-2)}
