@@ -1,0 +1,8 @@
+#!/bin/sh
+# Bloqueia commits a menos que o arquivo `.allow_commit` exista na raiz do repositório.
+if [ -f ".allow_commit" ]; then
+  exit 0
+else
+  echo "Commits estão desabilitados por padrão. Use 'scripts/safe-commit.ps1' ou crie um arquivo '.allow_commit' para permitir o commit temporariamente."
+  exit 1
+fi
