@@ -11,7 +11,7 @@ const Compra: React.FC = () => {
         {listings.map(item => (
           <div className="card" key={item.id}>
             {item.image ? (
-              <img src={item.image} alt={item.title} style={{width:'100%',borderRadius:8,objectFit:'cover',height:160}} />
+              <img src={item.image} alt={item.title} className="listing-image" />
             ) : null}
             <h4 style={{marginTop:12}}>{item.title} <span style={{color:'var(--color-muted)',fontWeight:600,fontSize:14}}>· {item.year}</span></h4>
             <p style={{margin:0,color:'var(--color-muted)'}}>{item.km} · {item.city}</p>
